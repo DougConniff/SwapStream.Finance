@@ -17,7 +17,7 @@ export const fetchFarmUserAllowances = async (
   proxyAddress?: string,
 ) => {
   const isBscNetwork = verifyBscNetwork(chainId)
-  const masterChefAddress = /* isBscNetwork ? */ getMasterChefAddress(chainId) /*: getNonBscVaultAddress(chainId) */
+  const masterChefAddress = /* isBscNetwork ? */ getMasterChefAddress(chainId) /* : getNonBscVaultAddress(chainId) */
 
   const calls = farmsToFetch.map((farm) => {
     const lpContractAddress = farm.lpAddress
@@ -59,7 +59,7 @@ export const fetchFarmUserStakedBalances = async (
   chainId: number,
 ) => {
   const isBscNetwork = verifyBscNetwork(chainId)
-  const masterChefAddress = /* isBscNetwork ? */ getMasterChefAddress(chainId) /*: getNonBscVaultAddress(chainId) */
+  const masterChefAddress = /* isBscNetwork ? */ getMasterChefAddress(chainId) /* : getNonBscVaultAddress(chainId) */
 
   const calls = farmsToFetch.map((farm) => {
     return {
@@ -70,7 +70,7 @@ export const fetchFarmUserStakedBalances = async (
   })
 
   const rawStakedBalances = await multicallv2({
-    abi: /* isBscNetwork ?*/ masterchefABI /*: nonBscVault*/,
+    abi: /* isBscNetwork ? */ masterchefABI /* : nonBscVault */ ,
     calls,
     chainId,
     options: { requireSuccess: false },
@@ -84,7 +84,7 @@ export const fetchFarmUserStakedBalances = async (
 export const fetchFarmUserEarnings = async (account: string, farmsToFetch: SerializedFarmConfig[], chainId: number) => {
   const isBscNetwork = verifyBscNetwork(chainId)
   const multiCallChainId = farmFetcher.isTestnet(chainId) ? ChainId.RINKEBY : ChainId.ETHEREUM // ChainId.BSC_TESTNET : ChainId.BSC
-  const userAddress = /*isBscNetwork ? account :*/ await fetchCProxyAddress(account, multiCallChainId)
+  const userAddress = /* isBscNetwork ? account : */ await fetchCProxyAddress(account, multiCallChainId)
   const masterChefAddress = getMasterChefAddress(multiCallChainId)
 
   const calls = farmsToFetch.map((farm) => {

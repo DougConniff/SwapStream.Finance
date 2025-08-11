@@ -2,7 +2,7 @@ import { ERC20Token } from './entities/token'
 
 export enum ChainId {
   ETHEREUM = 1,
-  RINKEBY = 11155111, //sepolia
+  RINKEBY = 11155111, // sepolia
   GOERLI = 5,
   BSC = 56,
   BSC_TESTNET = 97,
@@ -14,7 +14,7 @@ const FACTORY_ADDRESS_ETH = '0x326Ee96748E7DcC04BE1Ef8f4E4F6bdd54048932'
 
 export const FACTORY_ADDRESS_MAP: Record<number, string> = {
   [ChainId.ETHEREUM]: FACTORY_ADDRESS_ETH,
-  [ChainId.RINKEBY]: '0x47779C8daBB270D50c896551a4B7a736cf1DC1d3', //sepolia
+  [ChainId.RINKEBY]: '0x47779C8daBB270D50c896551a4B7a736cf1DC1d3', // sepolia
   [ChainId.GOERLI]: FACTORY_ADDRESS_ETH,
   [ChainId.BSC]: FACTORY_ADDRESS,
   [ChainId.BSC_TESTNET]: '0xe5d81040CF0051704E0b2feCA6fdfb6588Ea2dcE',
@@ -24,7 +24,7 @@ export const INIT_CODE_HASH = '0x00fb7f630766e6a796048ea87d01acd3068e8ff67d07814
 const INIT_CODE_HASH_ETH = '0xcfeb1f8754759f0abe461dd409d6d501fdd73b91a848c483faa6db0faf53c3bd'
 export const INIT_CODE_HASH_MAP: Record<number, string> = {
   [ChainId.ETHEREUM]: INIT_CODE_HASH_ETH,
-  [ChainId.RINKEBY]: '0xb1eb97d9c21569fcf742bbde7be02ec891843354e7df4b73c9aaeb8e54894ab6', //sepolia
+  [ChainId.RINKEBY]: '0xb1eb97d9c21569fcf742bbde7be02ec891843354e7df4b73c9aaeb8e54894ab6', // sepolia
   [ChainId.GOERLI]: INIT_CODE_HASH_ETH,
   [ChainId.BSC]: INIT_CODE_HASH,
   [ChainId.BSC_TESTNET]: '0xb49f7688c16bf6bda26a9f3143a3e0d1c63110576b9b964c4bf2e4d9c976839d',
@@ -41,7 +41,7 @@ export const WETH9 = {
   ),
   [ChainId.RINKEBY]: new ERC20Token(
     ChainId.RINKEBY,
-    '0x7b79995e5f793A07Bc00c21412e50Ecae098E7f9', //sepolia
+    '0x7b79995e5f793A07Bc00c21412e50Ecae098E7f9', // sepolia
     18,
     'WETH',
     'Wrapped Ether',

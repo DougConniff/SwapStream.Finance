@@ -115,7 +115,7 @@ export const bscTest: Chain = {
   testnet: true,
 }
 
-export const rinkeby: Chain = { //sepolia
+export const rinkeby: Chain = { // sepolia
   id: 11155111,
   name: 'Sepolia Testnet',
   network: 'sepolia-testnet',
@@ -138,7 +138,7 @@ export const rinkeby: Chain = { //sepolia
   testnet: true,
 }
 
-export const mainnet: Chain = { //sepolia
+export const mainnet: Chain = { // sepolia
   id: 1,
   name: 'Ethereum',
   network: 'ethereum',
