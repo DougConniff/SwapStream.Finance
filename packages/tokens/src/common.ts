@@ -10,7 +10,7 @@ export const SST_MAINNET = new ERC20Token(
 )
 export const SST_TESTNET = new ERC20Token(
   ChainId.RINKEBY, // sepolia
-  '0x6BDb853Ae79C4C01bb4283E0E960c039D3bA1899',
+  '0xcA367522caC23386Bd0dcFEa963C2Eac7e85340a',
   18,
   'SST',
   'Swap Stream Token',
