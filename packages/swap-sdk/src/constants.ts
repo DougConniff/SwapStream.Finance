@@ -24,7 +24,7 @@ export const INIT_CODE_HASH = '0x00fb7f630766e6a796048ea87d01acd3068e8ff67d07814
 const INIT_CODE_HASH_ETH = '0xcfeb1f8754759f0abe461dd409d6d501fdd73b91a848c483faa6db0faf53c3bd'
 export const INIT_CODE_HASH_MAP: Record<number, string> = {
   [ChainId.ETHEREUM]: INIT_CODE_HASH_ETH,
-  [ChainId.RINKEBY]: '0xf87e3c39dcc5816727a71abfa2cb07d7deae50d41ca4b69ed908efc9e86cc6e4', // sepolia
+  [ChainId.RINKEBY]: '0xf37359b4575faf662770e4f3f4c8ed0b57d40290f015c3569be3495d3f472fe6', // sepolia
   [ChainId.GOERLI]: INIT_CODE_HASH_ETH,
   [ChainId.BSC]: INIT_CODE_HASH,
   [ChainId.BSC_TESTNET]: '0xb49f7688c16bf6bda26a9f3143a3e0d1c63110576b9b964c4bf2e4d9c976839d',
