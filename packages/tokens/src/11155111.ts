@@ -8,7 +8,7 @@ export const rinkebyTokens = {
   sst: SST[ChainId.RINKEBY],
   syrup: new ERC20Token(
     ChainId.RINKEBY,
-    '0x142Da8e0cd9bDb4e5FFE41D099B37d8B7672803C',
+    '0xD213A1B698Ca84B480B523DED26d9Ec2b224865D',
     18,
     'SYRUP',
     'SyrupBar Token',

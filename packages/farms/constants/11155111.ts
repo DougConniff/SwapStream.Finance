@@ -8,14 +8,14 @@ const farms: SerializedFarmConfig[] = [
   {
     pid: 0,
     lpSymbol: 'SST',
-    lpAddress: '0x1A96CF832e63e539ea3D7070de5C3652880bFb26',
+    lpAddress: '0xad07F58e0cfaf6aF19b7Ceb86B1ac245cb9DB3e1',
     token: rinkebyTokens.syrup,
     quoteToken: rinkebyTokens.weth,
   },
   {
     pid: 1,
     lpSymbol: 'SST-WETH LP',
-    lpAddress: '0x5bB4e6Ba34A4060475BB120fC62288e64Cc590FF',
+    lpAddress: '0x11e695BCe07c49924Cca9DB1a8DC6A622A262545',
     token: rinkebyTokens.weth,
     quoteToken: rinkebyTokens.sst,
   },

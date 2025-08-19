@@ -84,7 +84,7 @@ export const fetchFarmUserStakedBalances = async (
 export const fetchFarmUserEarnings = async (account: string, farmsToFetch: SerializedFarmConfig[], chainId: number) => {
   const isBscNetwork = verifyBscNetwork(chainId)
   const multiCallChainId = farmFetcher.isTestnet(chainId) ? ChainId.RINKEBY : ChainId.ETHEREUM // ChainId.BSC_TESTNET : ChainId.BSC
-  const userAddress = /* isBscNetwork ? account : */ await fetchCProxyAddress(account, multiCallChainId)
+  const userAddress = account /* isBscNetwork ? account :  await fetchCProxyAddress(account, multiCallChainId) */
   const masterChefAddress = getMasterChefAddress(multiCallChainId)
 
   const calls = farmsToFetch.map((farm) => {

@@ -105,7 +105,7 @@ const MenuItem: React.FC<React.PropsWithChildren<FooterProps>> = ({
             <Button
               data-theme={isDark ? "dark" : "light"}
               as="a"
-              href="https://swapstream.finance/swap?outputCurrency=0xc07f892031861467d5551Fc8322699765311B7a3&chainId=56"
+              href="https://swapstream.finance/swap?outputCurrency=&chainId=1"
               target="_blank"
               scale="sm"
               endIcon={<ArrowForwardIcon color="backgroundAlt" />}
