@@ -5,8 +5,8 @@ const tokens = {
   sst: {
     symbol: "SST",
     address: {
-      56: "0x6BDb853Ae79C4C01bb4283E0E960c039D3bA1899",
-      97: "0xdaF6CCd905BcD6d2cF139CA5D4908Dc726523AB4",
+      1: "0x6BDb853Ae79C4C01bb4283E0E960c039D3bA1899",
+      11155111: "0xdaF6CCd905BcD6d2cF139CA5D4908Dc726523AB4",
     },
     decimals: 18,
     projectLink: "https://swapstream.finance",
