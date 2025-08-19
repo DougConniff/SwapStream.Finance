@@ -31,4 +31,4 @@ export const PREDICTION_TOOLTIP_DISMISS_KEY = 'prediction-switcher-dismiss-toolt
 export const GELATO_NATIVE = '0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee'
 
 export const EXCHANGE_DOCS_URLS = 'https://swapstream.finance'
-export const EXCHANGE_HELP_URLS = '#'
+export const EXCHANGE_HELP_URLS = 'https://swapstream.finance'

@@ -36,7 +36,7 @@ const WalletWrongNetwork: React.FC<React.PropsWithChildren<WalletWrongNetworkPro
           <MessageText>{t('Unable to switch network. Please try it on your wallet')}</MessageText>
         </Message>
       )}
-      <StyledLink href="#" external>
+      <StyledLink href="https://swapstream.finance" external>
         <Button width="100%" variant="secondary">
           {t('Learn How')}
           <HelpIcon color="primary" ml="6px" />

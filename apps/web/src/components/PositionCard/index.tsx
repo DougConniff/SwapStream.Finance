@@ -264,7 +264,7 @@ function MinimalPositionCardView({
                   style={{ display: 'inline' }}
                   ml="4px"
                   external
-                  href="#"
+                  href="https://swapstream.finance"
                 >
                   {t('here.')}
                 </Link>
