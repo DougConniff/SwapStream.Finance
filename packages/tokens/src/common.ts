@@ -2,7 +2,7 @@ import { ChainId, ERC20Token } from '@pancakeswap/sdk'
 
 export const SST_MAINNET = new ERC20Token(
   ChainId.ETHEREUM,
-  '0xc07f892031861467d5551Fc8322699765311B7a3',
+  '0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82',
   18,
   'SST',
   'Swap Stream Token',

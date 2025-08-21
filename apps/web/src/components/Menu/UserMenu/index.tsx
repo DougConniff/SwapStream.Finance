@@ -65,12 +65,12 @@ const UserMenu = () => {
           {t('Recent Transactions')}
           {hasPendingTransactions && <RefreshIcon spin />}
         </UserMenuItem>
-        <UserMenuDivider />
+        {/* <UserMenuDivider />
         <NextLink href={`/profile/${account?.toLowerCase()}`} passHref>
           <UserMenuItem as="a" disabled={isWrongNetwork || chainId !== ChainId.BSC}>
             {t('Your NFTs')}
           </UserMenuItem>
-        </NextLink>
+        </NextLink> */}
         <ProfileUserMenuItem
           isLoading={isLoading}
           hasProfile={hasProfile}
