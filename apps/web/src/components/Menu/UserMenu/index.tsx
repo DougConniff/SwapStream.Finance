@@ -71,11 +71,11 @@ const UserMenu = () => {
             {t('Your NFTs')}
           </UserMenuItem>
         </NextLink> */}
-        <ProfileUserMenuItem
+        {/* <ProfileUserMenuItem
           isLoading={isLoading}
           hasProfile={hasProfile}
           disabled={isWrongNetwork || chainId !== ChainId.BSC}
-        />
+        /> */}
         <UserMenuDivider />
         <UserMenuItem as="button" onClick={logout}>
           <Flex alignItems="center" justifyContent="space-between" width="100%">
