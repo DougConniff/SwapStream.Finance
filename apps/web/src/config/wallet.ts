@@ -18,11 +18,28 @@ const delay = (t: number) => new Promise((resolve) => setTimeout(resolve, t))
 const createQrCode = (chainId: number, connect) => async () => {
   connect({ connector: walletConnectNoQrCodeConnector, chainId })
 
-  // wait for WalletConnect to setup in order to get the uri
-  await delay(100)
-  const { uri } = (await walletConnectNoQrCodeConnector.getProvider()).connector
+  const r = await walletConnectNoQrCodeConnector.getProvider()
+  return new Promise<string>((resolve) => {
+    r.on('display_uri', (uri) => {
+      resolve(uri)
+    })
+  })
+}
 
-  return uri
+const isMetamaskInstalled = () => {
+  if (typeof window === 'undefined') {
+    return false
+  }
+
+  if (window.ethereum?.isMetaMask) {
+    return true
+  }
+
+  if (window.ethereum?.providers?.some((p) => p.isMetaMask)) {
+    return true
+  }
+
+  return false
 }
 
 const walletsConfig = ({
@@ -38,7 +55,7 @@ const walletsConfig = ({
       id: 'metamask',
       title: 'Metamask',
       icon: '/images/wallets/metamask.png',
-      installed: typeof window !== 'undefined' && Boolean(window.ethereum?.isMetaMask) && metaMaskConnector.ready,
+      installed: isMetamaskInstalled() && metaMaskConnector.ready,
       connectorId: ConnectorNames.MetaMask,
       deepLink: 'https://metamask.app.link/dapp/swapstream.finance/',
       qrCode,

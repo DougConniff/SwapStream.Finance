@@ -27,6 +27,7 @@ import {
   promotedGradientClass,
   walletSelectWrapperClass,
 } from './WalletModal.css'
+import { isIOS,isAndroid } from 'react-device-detect';
 
 const Qrcode = lazy(() => import('./components/QRCode'))
 
@@ -403,6 +404,9 @@ export function WalletModalV2<T = unknown>(props: WalletModalV2Props<T>) {
         .then((v) => {
           if (v) {
             localStorage.setItem(walletLocalStorageKey, wallet.title)
+            if (isIOS) {
+            window.location.reload()
+            }
           }
         })
         .catch((err) => {

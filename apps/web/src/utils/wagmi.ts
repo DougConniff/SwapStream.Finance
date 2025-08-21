@@ -23,7 +23,7 @@ const getNodeRealUrl = (networkName: string) => {
       break
     case 'rinkeby':
       if (process.env.NEXT_PUBLIC_NODE_REAL_API_RINKEBY) {
-        host = `eth-rinkeby.nodereal.io/v1/${process.env.NEXT_PUBLIC_NODE_REAL_API_RINKEBY}`
+        host = `eth-sepolia.nodereal.io/v1/${process.env.NEXT_PUBLIC_NODE_REAL_API_RINKEBY}`
       }
       break
     case 'goerli':
@@ -109,7 +109,7 @@ const bloctoConnector = new BloctoConnector({
 export const bscConnector = new BinanceWalletConnector({ chains })
 
 export const client = createClient({
-  autoConnect: false,
+  autoConnect: true,
   provider,
   connectors: [
     new SafeConnector({ chains }),
