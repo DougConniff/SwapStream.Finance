@@ -26,6 +26,11 @@ const getNodeRealUrl = (networkName: string) => {
         host = `eth-sepolia.nodereal.io/v1/${process.env.NEXT_PUBLIC_NODE_REAL_API_RINKEBY}`
       }
       break
+    case 'sepolia-testnet':
+    if (process.env.NEXT_PUBLIC_NODE_REAL_API_SEPOLIA) {
+        host = `eth-sepolia.nodereal.io/v1/${process.env.NEXT_PUBLIC_NODE_REAL_API_SEPOLIA}`
+      }
+      break
     case 'goerli':
       if (process.env.NEXT_PUBLIC_NODE_REAL_API_GOERLI) {
         host = `eth-goerli.nodereal.io/v1/${process.env.NEXT_PUBLIC_NODE_REAL_API_GOERLI}`

@@ -74,8 +74,8 @@ export const bsc: Chain = {
   name: 'BNB Smart Chain',
   network: 'bsc',
   rpcUrls: {
-    public: 'https://bsc-mainnet.nodereal.io/v1/692665b997244d088c5a8f8cf87b7cf5',
-    default: 'https://bsc-mainnet.nodereal.io/v1/692665b997244d088c5a8f8cf87b7cf5',
+    public: 'https://bsc-mainnet.nodereal.io/v1/992332d29f9748088199d89e5f08ace3',
+    default: 'https://bsc-mainnet.nodereal.io/v1/992332d29f9748088199d89e5f08ace3',
   },
   blockExplorers: {
     default: bscExplorer,
@@ -148,7 +148,7 @@ export const mainnet: Chain = { // sepolia
     symbol: 'ETH',
   },
   rpcUrls: {
-    public: 'https://eth-mainnet.nodereal.io/v1/692665b997244d088c5a8f8cf87b7cf5',
+    public: 'https://eth-mainnet.nodereal.io/v1/992332d29f9748088199d89e5f08ace3',
     default: 'https://ethereum-rpc.publicnode.com',
   },
   blockExplorers: {
