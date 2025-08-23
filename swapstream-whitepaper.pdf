@@ -1,0 +1,26 @@
+3.3 SST Staking & Governance
+The SwapStream protocol features a dual reward staking system designed to incentivize long-term alignment and participation. Users can stake their SST tokens to earn a share of the protocol's revenue and amplify their governance voting power.
+
+Staking Tiers & Rewards:
+
+Staking rewards are generated from a portion of the protocol's swap fees and are distributed in ETH/WETH, providing a real-yield income stream. Governance power multipliers apply to voting on SwapStream Improvement Proposals (SSIPs).
+
+Lock Duration	Reward Rate (APR)	Governance Power Multiplier
+Flexible (No Lock)	5%	1x
+30 Days	20%	1.5x
+90 Days	35%	2x
+180 Days	50%	3x
+Key Mechanics:
+
+Rewards: Earned in ETH/WETH from protocol fees.
+
+Early Unstaking: Tokens committed to a lock period cannot be accessed before the lock timer expires. This ensures fairness and guarantees the locked rewards.
+
+Governance: The governance power multiplier applies to the number of votes a user can cast based on their staked amount, giving long-term stakeholders a greater say in the protocol's future.
+
+This system ensures that the most committed community members are rewarded proportionally for their trust and are empowered to guide the SwapStream ecosystem.
+
+
+
+
+						"The authors utilized AI-assisted language models for research and editorial support during the drafting of this document."
