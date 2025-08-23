@@ -12,7 +12,7 @@ export const footerLinks: (t: ContextApi['t']) => FooterLinkType[] = (t) => [
       },
       {
         label: t('Whitepaper'),
-        href: 'https://swapstream-whitepaper.pdf',
+        href: 'https://swapstream.finance-whitepaper.pdf',
       },
     ],
   },
