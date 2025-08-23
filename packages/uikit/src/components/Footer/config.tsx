@@ -89,7 +89,7 @@ export const socials = [
   {
     label: "Twitter",
     icon: TwitterIcon,
-    href: "#",
+    href: "https://x.com/swapstream_eth?s=11",
   },
   {
     label: "Telegram",
@@ -109,7 +109,7 @@ export const socials = [
   {
     label: "Instagram",
     icon: InstagramIcon,
-    href: "#",
+    href: "https://www.instagram.com/swapstream",
   },
   // {
   //   label: "Github",
@@ -119,7 +119,7 @@ export const socials = [
   {
     label: "Discord",
     icon: DiscordIcon,
-    href: "#",
+    href: "https://discord.gg/MxKehuCEDc",
   },
   // {
   //   label: "Medium",
@@ -129,7 +129,7 @@ export const socials = [
   {
     label: "Youtube",
     icon: YoutubeIcon,
-    href: "#",
+    href: "https://www.youtube.com/@SwapStreamFinance",
   },
 ];
 
