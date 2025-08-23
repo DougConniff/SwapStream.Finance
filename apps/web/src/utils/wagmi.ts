@@ -68,7 +68,7 @@ export const { provider, chains } = configureChains(CHAINS, [
 export const injectedConnector = new InjectedConnector({
   chains,
   options: {
-    shimDisconnect: false,
+    shimDisconnect: true,
     shimChainChangedDisconnect: true,
   },
 })
@@ -98,7 +98,7 @@ export const walletConnectNoQrCodeConnector = new WalletConnectConnector({
 export const metaMaskConnector = new MetaMaskConnector({
   chains,
   options: {
-    shimDisconnect: false,
+    shimDisconnect: true,
     shimChainChangedDisconnect: true,
   },
 })
