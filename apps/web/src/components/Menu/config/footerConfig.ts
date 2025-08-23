@@ -12,7 +12,7 @@ export const footerLinks: (t: ContextApi['t']) => FooterLinkType[] = (t) => [
       },
       {
         label: t('Whitepaper'),
-        href: '#',
+        href: '/whitepaper.pdf',
       },
     ],
   },
